@@ -80,12 +80,12 @@
         <kubernetes-client.version>2.2.0</kubernetes-client.version>
         <mockwebserver.version>0.0.12</mockwebserver.version>
         <lombok.version>1.16.10</lombok.version>
-        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+        <hibernate-validator.version>5.3.5.Final-redhat-2</hibernate-validator.version>
         <servlet-api.version>2.5</servlet-api.version>
         <spock.version>1.1-groovy-2.4-rc-3</spock.version>
         <spring-boot.version>1.5.16.RELEASE</spring-boot.version>
         <spring-cloud.version>Camden.SR5</spring-cloud.version>
-        <spring.version>4.3.3.RELEASE</spring.version>
+        <spring.version>4.3.17.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
 
         <!-- Maven Plugin Versions -->
