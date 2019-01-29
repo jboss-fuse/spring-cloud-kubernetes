@@ -92,7 +92,7 @@
         <maven-compiler-plugin.version>3.5</maven-compiler-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
-        <fabric8.maven.plugin.version>3.5.33.fuse-730029</fabric8.maven.plugin.version>
+        <fabric8.maven.plugin.version>3.5.33</fabric8.maven.plugin.version>
         <gmavenplus-plugin.version>1.2</gmavenplus-plugin.version>
         <sundrio-plugin.vesion>0.3.4</sundrio-plugin.vesion>
     </properties>
