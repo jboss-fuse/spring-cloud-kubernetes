@@ -83,7 +83,7 @@
         <lombok.version>1.18.4</lombok.version>
         <servlet-api.version>2.5</servlet-api.version>
         <spock.version>1.1-groovy-2.4-rc-3</spock.version>
-        <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
+        <spring-boot.version>1.5.18.RELEASE</spring-boot.version>
         <spring-cloud.version>Camden.SR5</spring-cloud.version>
         <spring.version>4.3.17.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
@@ -95,6 +95,7 @@
         <fabric8.maven.plugin.version>3.5.33</fabric8.maven.plugin.version>
         <gmavenplus-plugin.version>1.2</gmavenplus-plugin.version>
         <sundrio-plugin.vesion>0.3.4</sundrio-plugin.vesion>
+        <jackson2.version>2.9.9</jackson2.version>
     </properties>
 
     <modules>
@@ -177,7 +178,6 @@
                 <version>${project.version}</version>
             </dependency>
 
-
             <!-- 3rd Party -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -203,6 +203,33 @@
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
                 <optional>true</optional>
+            </dependency>
+
+            <!-- Jackson 2 -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${jackson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson2.version}.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-jaxb-annotations</artifactId>
+                <version>${jackson2.version}</version>
             </dependency>
 
             <!-- Testing Dependencies -->
@@ -505,6 +532,14 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>redhat-ga</id>
+            <name>Redhat GA Repository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
